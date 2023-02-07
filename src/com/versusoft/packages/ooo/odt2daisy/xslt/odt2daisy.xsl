@@ -1373,8 +1373,8 @@
                     <thead>
                         <xsl:apply-templates select="current()/table:table-row[ position() = 1 ]">
                             <xsl:with-param name="heading" select="true()" />
-                            <xsl:if test="$DEBUG"><xsl:comment>no table:table-header-rows: bug 3171439</xsl:comment></xsl:if>
                         </xsl:apply-templates>
+                        <xsl:if test="$DEBUG"><xsl:comment>no table:table-header-rows: bug 3171439</xsl:comment></xsl:if>
                     </thead>
                     
                     <!-- TBODY ELEMENT -->
@@ -1390,8 +1390,8 @@
                     <thead>
                         <xsl:apply-templates select="current()/table:table-header-rows/table:table-row">
                             <xsl:with-param name="heading" select="true()" />
-                            <xsl:if test="$DEBUG"><xsl:comment>with table:table-header-rows</xsl:comment></xsl:if>
                         </xsl:apply-templates>
+                        <xsl:if test="$DEBUG"><xsl:comment>with table:table-header-rows</xsl:comment></xsl:if>
                     </thead>
 
                     <!-- TBODY ELEMENT -->
