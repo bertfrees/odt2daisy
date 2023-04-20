@@ -286,7 +286,7 @@ public class Odt2Daisy {
                 new StreamResult(tmpFlatFile2));
 
         transformer.transform(new StreamSource(tmpFlatFile2),
-                new StreamResult(dtbookFile));
+                new StreamResult(new File(dtbookFile)));
 
         logger.fine("done.");
 
